@@ -11,4 +11,6 @@
 ### Module 2
 * when...thenReturn...
 * anyString(), eq
+* when...thenThrow..., AssertThrow
+* doThrow...when... for a void method
 * 
