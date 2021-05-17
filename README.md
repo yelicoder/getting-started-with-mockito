@@ -7,3 +7,8 @@
 <artifactId>mockito-core</artifactId>
 <scope>test</scope>
 ```
+
+### Module 2
+* when...thenReturn...
+* anyString(), eq
+* 
