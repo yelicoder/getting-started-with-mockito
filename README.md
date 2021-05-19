@@ -8,9 +8,10 @@
 <scope>test</scope>
 ```
 
-### Module 2
+### Module 3
 * when...thenReturn...
 * anyString(), eq
 * when...thenThrow..., AssertThrow
 * doThrow...when... for a void method
-* 
+
+### Module 4
