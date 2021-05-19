@@ -21,3 +21,4 @@
 ### Module 5
 * verifyNoMoreInteractions(mocks)
 * Spies are partial mocks
+* doReturn(...) when (...)
