@@ -20,4 +20,4 @@
 
 ### Module 5
 * verifyNoMoreInteractions(mocks)
-* Spy
+* Spies are partial mocks
