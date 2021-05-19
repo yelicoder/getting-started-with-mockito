@@ -20,3 +20,4 @@
 
 ### Module 5
 * verifyNoMoreInteractions(mocks)
+* Spy
