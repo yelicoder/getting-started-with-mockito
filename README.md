@@ -40,7 +40,7 @@ https://stackoverflow.com/questions/20353846/mockito-difference-between-doreturn
             <scope>test</scope>
    </dependency>
    ```
-   * Need add the following annotation to use @Mock: @ExtendWith(MockitoExtension.class)
+   * Need annotate the test class with the following to use @Mock: @ExtendWith(MockitoExtension.class)
 * @RunWith is replaced by @ExtendWith in JUnit5 (junit-jupiter-engine): https://www.baeldung.com/junit-5-runwith
 
 ### Module 4
@@ -49,7 +49,7 @@ https://stackoverflow.com/questions/20353846/mockito-difference-between-doreturn
 https://javadoc.io/doc/org.mockito/mockito-core/2.7.0/org/mockito/ArgumentMatchers.html
 https://javadoc.io/doc/org.mockito/mockito-core/2.7.0/org/mockito/ArgumentMatcher.html
 ```
-  * When using argument matchers, all arguments have to be provided by matchers. "eq" should be used for the argument that has a value.
+  * When using argument matchers, all arguments have to be provided by matchers. "eq" should be used for the argument that has a raw value.
   * Since Mockito any(Class) and anyInt family matchers perform a type check, thus they won't match null arguments. Instead use the isNull matcher
 * Verify is used to confirm certain method using certain arguments is called: https://www.baeldung.com/mockito-verify 
   * Argument matcher can be used in the verified method 
