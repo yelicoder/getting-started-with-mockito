@@ -60,3 +60,9 @@ https://javadoc.io/doc/org.mockito/mockito-core/2.7.0/org/mockito/ArgumentMatche
 * Spies are partial mocks: https://www.baeldung.com/mockito-spy
   * Use @Spy annotation to mock the service
   * Difference between @Spy and @Mock: @Spy service will call the real method. @Mock service will not call the real method.
+* Testing code deals with time
+
+### Module 6
+* Behavior-driven development (BDD) is another style of mocking the service
+  * Generic BDD Structure: Given-When-Then
+  * BDDMockito.given(...).willReturn(...);
