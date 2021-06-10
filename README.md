@@ -26,16 +26,37 @@ https://stackoverflow.com/questions/20353846/mockito-difference-between-doreturn
 ```
   * use doReturn() where when() has issues
 * anyString(), eq
-* when...thenThrow..., AssertThrow
+* Mock an exception thrown by a service
+  * when(...)thenThrow(...)
+  * assertThrows(xxxx.class, () -> serviceObject.method)
 * doThrow...when... for a void method
 * Difference between Mockito.mock(), @Mock and @MockBean: https://www.baeldung.com/java-spring-mockito-mock-mockbean
+  * Need add the following dependency to use @Mock
+  ```
+  <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>2.28.2</version>
+            <scope>test</scope>
+   </dependency>
+   ```
+   * Need add the following annotation to use @Mock: @ExtendWith(MockitoExtension.class)
 * @RunWith is replaced by @ExtendWith in JUnit5 (junit-jupiter-engine): https://www.baeldung.com/junit-5-runwith
 
 ### Module 4
-* Argument matcher for verification
-* Argument Captor
+* Argument Matcher: 
+```
+https://javadoc.io/doc/org.mockito/mockito-core/2.7.0/org/mockito/ArgumentMatchers.html
+https://javadoc.io/doc/org.mockito/mockito-core/2.7.0/org/mockito/ArgumentMatcher.html
+```
+  * When using argument matchers, all arguments have to be provided by matchers. "eq" should be used for the argument that has a value.
+  * Since Mockito any(Class) and anyInt family matchers perform a type check, thus they won't match null arguments. Instead use the isNull matcher
+* Verify is used to confirm certain method using certain arguments is called: https://www.baeldung.com/mockito-verify 
+  * Argument matcher can be used in the verified method 
+  * Argument Captor can be used to specify the argument of the verify method. It is treated as an argument matcher.
 
 ### Module 5
 * verifyNoMoreInteractions(mocks)
-* Spies are partial mocks
+* Spies are partial mocks: https://www.baeldung.com/mockito-spy
+  * Use @Spy annotation to mock the service
 * doReturn(...) when (...)
