@@ -18,7 +18,7 @@
 
 ### Module 3
 * Steps to mock a service
-  * use mock(serviceName.class) to declare the service or use @Mock to declare the service
+  * use mock(serviceName.class) or @Mock to declare the service
   * Use "when(...).thenReturn(...)" to mock a service's return value
 * Difference between doReturn() and when(): 
 ```
