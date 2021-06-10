@@ -64,5 +64,5 @@ https://javadoc.io/doc/org.mockito/mockito-core/2.7.0/org/mockito/ArgumentMatche
 
 ### Module 6
 * Behavior-driven development (BDD) is another style of mocking the service
-  * Generic BDD Structure: Given-When-Then
-  * BDDMockito.given(...).willReturn(...);
+  * Mock: BDDMockito.given(...).willReturn(...);
+  * Verify: BDDMockito.then(...).should().xxx(....);
