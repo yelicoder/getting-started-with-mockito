@@ -1,5 +1,17 @@
 # getting-started-with-mockito
 
+### Setting a Test class using PowerMockito
+#### Annotations
+* @PrepareForTest: https://www.javadoc.io/doc/org.powermock/powermock-core/1.6.5/org/powermock/core/classloader/annotations/PrepareForTest.html
+ * Prepare to mock a class which has final, static and private method
+* @RunWith(PowerMockRunner.class)
+ * @RunWith indicate which Runner is used to run the Junit tests
+ * If Runner is PowerMockRunner, then PowerMockRunner is used to run the JUnit tests
+* @MockPolicy({Slf4jMockPolicy.class, Log4j2MockPolicy.class})
+* @PowerMockRunnerDelegate(SpringJUnit4ClassRunner.class): use another JUnitRunner with PowerMock
+* @ContextConfiguration
+* @PowerMockIgnore
+
 ### Module 2
 * Mockito dependency
 ```
